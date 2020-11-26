@@ -1,37 +1,63 @@
-## Welcome to GitHub Pages
+[![Gitter](https://badges.gitter.im/watchit-app/community.svg)](https://gitter.im/watchit-app/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-You can use the [editor on GitHub](https://github.com/ZorrillosDev/watchit-desktop/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Getting started
+* Cross-platform desktop apps [ElectronJs](https://www.electronjs.org/)
+* Decentralized DB [OrbitDB](https://orbitdb.org/)
+* IPFS implementation in JavaScript [JS-IPFS](https://github.com/ipfs/js-ipfs)
+* Bootstrap React App tool [Create React App](https://github.com/facebook/create-react-app).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[![screenshot](https://github.com/ZorrillosDev/watchit-desktop/blob/master/src/media/img/layout/watchit-screen.png?raw=true)]()
 
-### Markdown
+## Setup
+Please run `npm i` to install dependencies
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## Available Scripts
 
-# Header 1
-## Header 2
-### Header 3
+In the project directory, you can run:
 
-- Bulleted
-- List
+### `npm start && npm run dev`
 
-1. Numbered
-2. List
+Runs the app in the development mode.<br />
+Open to view it in electron.
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+### `npm run start && npm run inspect`
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Runs the app in the development mode.<br />
+Open to view it in electron with inspect mode to connect to chrome-inspector.
 
-### Jekyll Themes
+### `npm test`
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ZorrillosDev/watchit-desktop/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### Support or Contact
+### `npm run build`
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Packaging
+
+### `npm run package-{os}`
+
+Build app to choosen OS. Depending on packaging OS will need pack in respective OS.
+
+## Deploy
+
+Try running your [own gateway](https://github.com/ZorrillosDev/watchit-gateway)
